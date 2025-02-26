@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <title>Fitnesser</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen screen_plank">
+            <div class="screen-wrap">
+                <div class="title">Планка</div>
+
+                <div class="preview">
+                    <img src="./img/plank.webp" alt="preview">
+                </div>
+
+                <div class="info">
+                    <div class="info__title">Выполняйте:</div>
+                    <div class="info__value">30 секунд</div>
+                </div>
+
+                <div class="actions">
+                    <div class="stopwatch" data-end="30">
+                        <div class="stopwatch__start-label">Начать</div>
+
+                        <div class="stopwatch__display">
+                            <div class="stopwatch__value">0</div>
+                            <div class="stopawatch__unit">сек</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="approach">
+                    <span class="current">2</span>
+                    <span>подход из</span>
+                    <span class="target">3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal plank-complete-modal">
+        <div class="modal__content">
+            <svg class="star-bg star-bg_1" width="52" height="52" viewBox="0 0 52 52" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M26 0L18.9091 18.9091L0 26L18.9091 33.0909L26 52L33.0909 33.0909L52 26L33.0909 18.9091L26 0Z"
+                    fill="#DC6060" />
+            </svg>
+
+            <svg class="star-bg star-bg_2" width="52" height="52" viewBox="0 0 52 52" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M26 0L18.9091 18.9091L0 26L18.9091 33.0909L26 52L33.0909 33.0909L52 26L33.0909 18.9091L26 0Z"
+                    fill="#DC6060" />
+            </svg>
+
+            <svg class="star-bg star-bg_3" width="52" height="52" viewBox="0 0 52 52" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M26 0L18.9091 18.9091L0 26L18.9091 33.0909L26 52L33.0909 33.0909L52 26L33.0909 18.9091L26 0Z"
+                    fill="#DC6060" />
+            </svg>
+
+            <div class="plank-complete-modal__wrap">
+                <svg width="134" height="134" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_174)">
+                        <path
+                            d="M67 133.667C103.819 133.667 133.667 103.819 133.667 67C133.667 30.1811 103.819 0.333374 67 0.333374C30.1811 0.333374 0.333374 30.1811 0.333374 67C0.333374 103.819 30.1811 133.667 67 133.667Z"
+                            fill="#21C179" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M98.1774 44.2218C99.468 45.535 99.4494 47.6455 98.136 48.9357L60.1 86.3054C58.824 87.5594 56.7854 87.582 55.482 86.3574L37.6566 69.6141C36.3147 68.3541 36.2487 66.244 37.5091 64.9027C38.7695 63.5607 40.879 63.4947 42.2208 64.7547L57.712 79.306L93.464 44.1802C94.7767 42.89 96.8874 42.9087 98.1774 44.2218Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_174">
+                            <rect width="134" height="134" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <div class="plank-complete-modal__title">Выполнено!</div>
+            </div>
+
+            <a href="press_3.html" class="btn btn-icon next-screen-btn">
+                <span class="btn__text">Далее</span>
+                <div class="btn__icon">
+                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.3828 37L30 27L20.3828 17L18 19.4777L25.2344 27L18 34.5223L20.3828 37Z"
+                            fill="#2C2C2C" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script type="module" src="./js/plank.mjs"></script>
+</body>
+
+</html>

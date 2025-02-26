@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <title>Fitnesser</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen screen_timer">
+            <div class="screen-wrap">
+                <div class="title">Растяжка</div>
+
+                <div class="preview">
+                    <img class="practic-preview _active" src="./img/gifs/g8.gif" alt="practic 1">
+                    <img class="practic-preview" src="./img/gifs/g6.gif" alt="practic 2">
+                    <img class="practic-preview" src="./img/gifs/g9.gif" alt="practic 3">
+                    <img class="practic-preview" src="./img/gifs/g10.gif" alt="practic 4">
+                    <img class="practic-preview" src="./img/gifs/g1.gif" alt="practic 5">
+                </div>
+
+                <div class="info">
+                    <div class="info__title">Выполняйте:</div>
+                    <div class="info__value">5 минут</div>
+                </div>
+
+                <div class="actions">
+                    <div class="timer" data-minutes="0" data-seconds="10">
+                        <div class="timer__start-text">Начать</div>
+                        <span class="timer__text">00:00</span>
+                        <div class="timer__success-icon">
+                            <svg width="72" height="72" viewBox="0 0 72 72" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_9_85)">
+                                    <path
+                                        d="M36 71.8333C55.7902 71.8333 71.8334 55.7902 71.8334 36C71.8334 16.2098 55.7902 0.166626 36 0.166626C16.2098 0.166626 0.166687 16.2098 0.166687 36C0.166687 55.7902 16.2098 71.8333 36 71.8333Z"
+                                        fill="#21C179" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M52.7578 23.7567C53.4515 24.4626 53.4415 25.5969 52.7356 26.2904L32.2912 46.3766C31.6054 47.0506 30.5096 47.0628 29.8091 46.4046L20.2279 37.405C19.5066 36.7278 19.4711 35.5937 20.1486 34.8727C20.8261 34.1514 21.9599 34.1159 22.6812 34.7931L31.0077 42.6145L50.2244 23.7343C50.9299 23.0408 52.0644 23.0509 52.7578 23.7567Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_9_85">
+                                        <rect width="72" height="72" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <a href="finish.html" class="btn btn-icon next-screen-btn" disabled>
+                    <span class="btn__text">Далее</span>
+                    <div class="btn__icon">
+                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.3828 37L30 27L20.3828 17L18 19.4777L25.2344 27L18 34.5223L20.3828 37Z"
+                                fill="#2C2C2C" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/timerPage.mjs"></script>
+</body>
+
+</html>
