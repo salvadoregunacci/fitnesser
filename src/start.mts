@@ -1,12 +1,7 @@
 const tg = window.Telegram.WebApp;
 
 tg.ready();
+tg.expand();
 
-const expandApp = () => {
-    tg.expand();
-    document.documentElement.requestFullscreen?.().catch(() => {});
-};
-
-expandApp();
-tg.onEvent("viewport_changed", expandApp);
-setTimeout(expandApp, 500);
+tg.setHeaderColor("#AC4141");
+tg.setBottomBarColor("#AC4141");

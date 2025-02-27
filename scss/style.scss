@@ -14,7 +14,7 @@ $s36: 36px;
 $s42: 42px;
 $s72: 72px;
 
-$container-width: 320px;
+$container-width: 310px;
 
 @font-face {
     font-family: "Montserrat";
@@ -101,7 +101,7 @@ body {
     display: block;
     width: 100%;
     background: $bg-light;
-    height: 20%;
+    height: 8%;
 }
 
 #start-btn {
@@ -129,15 +129,15 @@ body {
 
 .title {
     margin-top: $s16;
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 28px;
+    font-weight: 600;
     color: $white;
     text-align: center;
 }
 
 .preview {
     width: 100%;
-    height: 190px;
+    height: 160px;
     background: $white;
     border: 4px solid $border;
     display: flex;
@@ -155,7 +155,7 @@ body {
 }
 
 .info {
-    margin-top: $s32;
+    margin-top: $s24;
     text-align: center;
 }
 
@@ -166,7 +166,7 @@ body {
 }
 
 .info__value {
-    font-size: 32px;
+    font-size: 28px;
     color: $yellow;
     font-weight: 700;
 }
@@ -267,7 +267,7 @@ body {
 .wrap {
     display: flex;
     flex-direction: column;
-    row-gap: $s24;
+    row-gap: 0;
 }
 
 .approach {
@@ -306,13 +306,13 @@ body {
 }
 
 .desc__title {
-    font-size: 24px;
+    font-size: 20px;
     color: $white;
     font-weight: 400;
 }
 
 .desc__value {
-    font-size: 24px;
+    font-size: 20px;
     color: $yellow;
     font-weight: 600;
     margin-left: $s8;
@@ -326,7 +326,7 @@ body {
 }
 
 .screen_plank .info {
-    margin-top: $s32;
+    margin-top: $s24;
 }
 
 .stopwatch {
@@ -361,7 +361,7 @@ body {
 }
 
 .screen_plank .stopwatch {
-    margin-top: $s32;
+    margin-top: $s24;
 }
 
 .stopwatch__display {
@@ -476,7 +476,7 @@ body {
 }
 
 .finish-bg {
-    margin-top: 20%;
+    margin-top: 8%;
     width: 290px;
     height: 290px;
     background: $bg-light;
@@ -485,6 +485,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.01);
 
     img {
         transform: translateY($s42);
@@ -499,18 +500,18 @@ body {
 }
 
 .finish-title {
-    font-size: $s32;
+    font-size: 28px;
     color: $yellow;
     font-weight: 700;
 }
 
 .finish-info {
-    margin-top: 72px;
+    margin-top: 50px;
 }
 
 .finish-desc {
-    margin-top: $s16;
-    font-size: 24px;
+    margin-top: 8px;
+    font-size: 20px;
     color: $white;
     font-weight: 400;
 }
@@ -553,4 +554,20 @@ body {
     height: 21px;
     top: 340px;
     left: 65px;
+}
+
+.nav-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 27px;
+    width: 17px;
+    background: url("../img/chevron.svg") center center / contain no-repeat;
+    opacity: .6;
+}
+
+.link-next {
+    left: auto;
+    right: 10px;
+    transform: scaleX(-1);
 }
